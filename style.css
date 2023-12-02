@@ -63,7 +63,7 @@ h1 {
 }
 
 button.primary, button.secondary {
-    color: #fff;
+    color: #000000;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -167,4 +167,5 @@ footer {
     font-size: 36px;
     margin-left: 10px;
 }
+
 
