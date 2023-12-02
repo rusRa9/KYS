@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-BQ1+K4Ff5A5U9VGaSc8Sj8C9uMUmy5Dnlv88A4MrtY66wXJsW7caJlxacv9J3a+Pnx2UYj7qeaHFkuJN+KdF1g==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>KYS Learning Platform</title>
+</head>
+<div class="container">
+    <h1>KYS Learning Platform</h1></div>
+<body onload="startLesson()">
+<!-- <button id="toggleBtn" onclick="toggleSidebar()">☰</button> -->
+<button onclick="expandSidebar()">↔</button>
+    <div class="sidebar" id="sidebar">
+        <button id="toggleBtn" onclick="toggleSidebar()">☰</button>
+        <nav>
+            <!-- <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">☰</a> -->
+            <a href="#" class="icon"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="icon"><i class="fas fa-info-circle"></i> About</a>
+            </div>
+            <div class="container">
+        </nav>
+    </div>
+        <div id="main-container">
+            <div id="lessons-container">
+                <h3>Choose a Subject:</h3>
+                <div id="lessons-wrapper"></div>
+            </div>
+
+            <div id="lesson-tasks-container"></div>
+
+            <div id="message-container"></div>
+
+            <div id="percent-container"></div>
+        </div>
+
+        <div id="registration-container" style="display: none;">
+            <h3>Registration</h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <button onclick="registerUser()">Register</button>
+        </div>
+</body>
+</html>

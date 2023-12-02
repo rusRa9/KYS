@@ -1,0 +1,170 @@
+/* body{
+    background-color: rgba(69, 89, 164, 0.6);
+} */
+body {
+    background-image: linear-gradient(to right top, #293241, #3a4750, #4a5b67, #616d78, #7b8794);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #61dafb;
+}
+
+#lessons-container {
+    background-color: #1e2a38;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#lessons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lesson {
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.lesson:hover {
+    background-color: #34495e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#lesson-tasks-container {
+    background-color: #2c3e50;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#percent-container {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button.primary, button.secondary {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.secondary {
+    background-color: #555;
+}
+
+button.secondary:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #61dafb;
+    color: #fff;
+}
+
+.sidebar {
+    transition: margin-left 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #2c3d70;
+    color: #fff;
+    padding: 20px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.sidebar.collapsed {
+    left: -200px;
+}
+#header {
+    transition: margin-left 0.3s;
+}
+
+.sidebar-open #header {
+    margin-left: 200px; 
+}
+
+.sidebar button {
+    margin: 10px 10px 3px; 
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+.collapsed {
+    margin-left: -120px; 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px; 
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left: 20px;
+    transition: margin-left 0.5s, padding-left 0.5s;
+}
+
+/* #toggleBtn {
+    display: none; 
+} */
+.container.expanded {
+    margin-left: 200px;
+    padding-left: 10px; 
+}
+.logo {
+    margin-bottom: 20px;
+    transition: margin-left 0.3s;
+}
+
+.sidebar-open .logo {
+    margin-left: 200px; 
+}
+.sidebar .icon {
+    margin-right: 10px;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
