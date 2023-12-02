@@ -13,7 +13,6 @@ var Lessons = [
         lessons: ["Geometry"],
         tasks: [
             { text: "Calculate the area of a square with side length 4.", answer: "16" },
-            // Добавьте больше задач для геометрии
         ],
         completedTasks: 0,
         totalTasks: 1
@@ -22,7 +21,6 @@ var Lessons = [
         lessons: ["History"],
         tasks: [
             { text: "Who was the first president of the United States?", answer: "George Washington" },
-            // Добавьте больше вопросов для истории
         ],
         completedTasks: 0,
         totalTasks: 1
@@ -31,12 +29,10 @@ var Lessons = [
         lessons: ["Science"],
         tasks: [
             { text: "What is the chemical symbol for water?", answer: "H2O" },
-            // Добавьте больше вопросов для науки
         ],
         completedTasks: 0,
         totalTasks: 1
     }
-    // Добавьте больше разделов и уроков, если нужно
 ];
 
 var totalLessons = Lessons.length;
@@ -83,7 +79,7 @@ function displayLessonTasks() {
     }
 
     var submitButton = document.createElement("button");
-    submitButton.className = "primary"; // Добавим класс primary для стилизации
+    submitButton.className = "primary"; 
     submitButton.textContent = "Submit";
     submitButton.setAttribute("onclick", "checkAnswers()");
     tasksContainer.appendChild(submitButton);
@@ -195,6 +191,12 @@ function toggleSidebar() {
 
     var container = document.querySelector(".container");
     container.classList.toggle("expanded");
+}
+
+function loadUser() {
+}
+
+function registerUser() {
 }
 
 function loadUser() {
